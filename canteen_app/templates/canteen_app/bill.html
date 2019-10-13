@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inline_Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
+              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+              crossorigin="anonymous">
+              <style>
+                 .col-4{
+                  border: 2px grey;
+                  border-radius: 30%;
+                } 
+                #one,#two{
+                  margin: 10px;
+                }
+                a{
+                color: #ffffff;
+                } 
+               .order-button{
+                   align-self: center;
+               }
+              </style>
+    
+</head>
+<body>
+    <form class="form-inline">
+            {% for item in bill_items %}
+            <label for="inlineFormInputName2" class="col-4" id="one">{{ item.food_item.food_name }}</label>
+            <label for="inlineFormInputGroupUsername2" class="col-4" id="two">{{ item.food_item.price }}</label>
+            {% endfor %}
+        <!-- <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Food_Name">
+        -->
+        
+        <!-- <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="">
+        </div>
+        -->
+        <!-- <div class="form-check mb-2 mr-sm-2">
+            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+            <label class="form-check-label" for="inlineFormCheck">
+            Remember me
+            </label>
+        </div> -->
+        </form>
+        <hr style="border:1px dotted black;"/>
+        <div class='total-price'>
+                <label for="inlineFormInputName2" class="col-4" id="one">Total Price : {{ order.total_price }}</label>
+        </div>
+        <div class='order-button'>
+            <button type="submit" class="btn btn-primary mb-2 ">
+                <a href="{% url 'canteen_app:menumain' %}" color=rgb(255,0,0)>Confirm</a>
+            </button>
+        </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{% extends 'canteen_app/index.html' %}
+{% load static %}
+
+{% block menu %} class="active" {% endblock %}
+{% block title %}
+    <div class="w3-agile-main-heading">
+        <h2>Menu</h2>
+        <style>
+                label{
+                    margin: 0 auto;
+                    width:90%;
+                    /* <!--margin-inline-start: 80px;--> */
+                }
+                button{
+                    margin-inline-start: 68px;
+                }
+                a{
+                    color: #ffffff;
+                }
+            </style>
+    </div>
+{% endblock %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>image</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    <style>
+        label{
+            margin: 0 auto;
+            width:90%;
+            /* margin-inline-start: 80px; */
+        }
+        button{
+            margin-inline-start: 68px;
+        }
+        a{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body> -->
+{% block body %}
+    <div class="container mt-3">
+        <div class="row">
+            {% for i in food_types %}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src={{media_url}}{{ i.image }} width="250px" height="200px">
+                    <br>
+                    <label for="inlineFormInputName2" ><h4>{{ i.food_type }}</h4></label>
+                    <br>
+                    <button type="submit" class="btn btn-success mb-2">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                         <a href="{% url 'canteen_app:menu_list' food_type_id=i.id %}" color=rgb(255,0,0)>View</a>
+                    </button>
+
+                </div>
+            {% endfor %}
+            <!-- <div class="col-3">there</div>
+            <div class="col-3">this</div>
+            <div class="col-3">akshat</div> -->
+        </div>
+    </div>
+
+{% endblock %}
