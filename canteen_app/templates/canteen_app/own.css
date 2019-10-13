@@ -1,0 +1,17 @@
+body
+{background: url("Desert.jpg") no-repeat;background-size:cover ;background-attachment: fixed;}
+.form-horizontal{border: 2px solid #fff;padding: 50px 60px;margin-top: 20vh;
+    -webkit-box-shadow: -1px 3px 23px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 23px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 23px 11px rgba(0,0,0,0.75)
+}
+.aksh{margin-top: 20px}
+#cat{
+font-weight: bold;
+margin-left:20px;
+}
+#dog{
+    font-weight: bold;
+    margin-left: 8em;
+}
+   
