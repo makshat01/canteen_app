@@ -47,7 +47,7 @@ body{
     float: right;
 }
 .w3-header-top-right p{
-	color:#FFFFFF;
+	color:#FFFFee;
 }
 /*-- social-icons --*/
 .agileinfo-social-grids{
@@ -61,7 +61,7 @@ body{
     display: inline-block;
 }
 .agileinfo-social-grids ul li a {
-	color: #FFFFFF;
+	color: #FFeeFF;
     text-align: center;
 }
 .agileinfo-social-grids ul li a i.fa{
@@ -72,26 +72,26 @@ body{
     -ms-transition: 0.5s all;
 }
 .agileinfo-social-grids ul li a i.fa.fa-facebook:hover {
-    color: #3b5998;
+    color: #3b5988;
 }
 .agileinfo-social-grids ul li a i.fa.fa-twitter{
-	margin:0 1em;
+	margin:0 1.2em;
 }
 .agileinfo-social-grids ul li a i.fa.fa-twitter:hover{
 	color: #55acee;
 }
 .agileinfo-social-grids ul li a i.fa.fa-rss{
-	margin:0 1em 0 0;
+	margin:0 1.1em 0 0;
 }
 .agileinfo-social-grids ul li a i.fa.fa-rss:hover{
-	color: #f26522;
+	color: #f26532;
 }
 .agileinfo-social-grids ul li a i.fa.fa-vk:hover{
-	color: #45668e;
+	color: #45668a;
 }
 .agileinfo-dot {
 	background: url(../images/dott.png)repeat 0px 0px;
-    background-size: 3px;
+    background-size: 3.1px;
     -webkit-background-size: 3px;
     -moz-background-size: 3px;
     -o-background-size: 3px;
@@ -100,7 +100,7 @@ body{
 }
 .head {
     padding: 1em 4em;
-    background: hsla(0, 0%, 0%, 0.45);
+    background: hsla(0, 0%, 0%, 0.47);
 }
 .logo h1{
     margin: .2em 0 0 0;
@@ -108,15 +108,15 @@ body{
 .logo h1 a{
     text-decoration: none;
     color: #FF5722;
-    letter-spacing: 3px;
-    font-size: 1.5em;
-    font-family: 'Great Vibes', cursive;
+    letter-spacing: 3,1px;
+    font-size: 1.6em;
+    font-family: 'Great Vibes', cursive, sans-serif,serif,'Arial Narrow Bold';
     font-weight: 600;
 }
 .logo h1 a span{
     font-size: .4em;
 	color:#FFFFFF;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif,serif, cursive,'Arial Narrow Bold';
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 6px;
@@ -126,15 +126,16 @@ body{
    height: auto; 
     padding: 0; 
     font-size: 18px; 
-    line-height: 20px;
+	line-height: 20px;
+	font-weight: bold;
 }
 .navbar-nav {
     float: right;
-	margin-top: 1.45em;
+	margin-top: 1.48em;
 }
 .header-left{
 	float:right;
-	margin-top: 1.4em;
+	margin-top: 1.42em;
 }
 .header-left ul li {
     display: inline-block;
